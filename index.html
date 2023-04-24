@@ -14,6 +14,22 @@
         }
         div p{
             font-style: italic;
+            color: darkmagenta;
+        }
+        p:hover{
+            color: blue;
+        }
+        p::first-letter{
+            color: chartreuse;
+        }
+        p::before{
+            content: "☠️";
+        }
+        ::placeholder{
+            color: darkgoldenrod;
+        }
+        ::placeholder{
+            color: olive;
         }
         .primeraparte{
             color: cornflowerblue;
@@ -23,6 +39,28 @@
         }
         a[href="https://platzi.com/clases/2467-frontend-developer/40833-etiquetas-de-html-mas-usadas/"]{
             color: brown;
+        }
+        .containerflex{
+            display: flex;
+            background-color: yellow;
+            justify-content: space-between;
+            height: 30px;
+        }
+        .itemflex{
+            width: 30px;
+            height: 30px;
+            background-color: indigo;
+        }
+        .containergrid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            background-color: indianred;
+        }
+        .itemgrid{
+            width: 30px;
+            height: 30px;
+            background-color: crimson;
         }
     </style>
 </head>
@@ -51,9 +89,22 @@
         </div>
         <form action="">
             <label for="name">Nombre</label>
-            <input type="text" name="" id="name">
+            <input type="text" name="" id="name" placeholder="name">
         </form>
         <a href="https://platzi.com/clases/2467-frontend-developer/40833-etiquetas-de-html-mas-usadas/"> Clase</a>
     </section>
+
+    <div class="containerflex">
+        <div class="itemflex"></div>
+        <div class="itemflex"></div>
+        <div class="itemflex"></div>
+        <div class="itemflex"></div>
+    </div>
+    <div class="containergrid">
+        <div class="itemgrid"></div>
+        <div class="itemgrid"></div>
+        <div class="itemgrid"></div>
+        <div class="itemgrid"></div>
+    </div>
 </body>
 </html>
