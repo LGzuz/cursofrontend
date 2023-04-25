@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .card{
+            width: 200px;
+            height: 300px;
+            top: 20px;
+            position: relative;
+            background-color: black;
+            border-radius: 20px;
+            overflow: hidden;
+            -webkit-box-shadow: 6px 9px 16px 7px rgba(0,0,0,0.75);
+            -moz-box-shadow: 6px 9px 16px 7px rgba(0,0,0,0.75);
+            box-shadow: 6px 9px 16px 7px rgba(0,0,0,0.75);
+        }
+        .card img{
+            width: 100%;
+            height: 60%;
+        }
+        .card .vaca{
+            position: absolute;
+            border-radius: 100%;
+            width: 125px;
+            height: 125px;
+            top: 90px;
+            transform: translateX(-161px);
+        }
+        .card p{
+            color: white;
+            font-style: italic;
+        }
+        .card .texto{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .card .cita{
+            text-align: end;
+            margin:0 10px ;
+            transform: translateY(10px);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/2929211/pexels-photo-2929211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <img class="vaca" src="https://www.desicomments.com/dc1/07/124906/124906.jpg" alt="">
+            <p class="texto">"Muuu"</p>
+            <p class="cita">-La Vaca</p>
+        </div>
+    </section>
+</body>
+</html>
